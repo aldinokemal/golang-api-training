@@ -5,13 +5,13 @@ import (
 	"github.com/aldinokemal/golang-api-training/helpers"
 	event_controller "github.com/aldinokemal/golang-api-training/modules/event/controllers"
 	event_service "github.com/aldinokemal/golang-api-training/modules/event/services"
-	"github.com/gofiber/fiber/v2/middleware/cors"
 
 	auth_controller "github.com/aldinokemal/golang-api-training/modules/auth/controllers"
 	auth_service "github.com/aldinokemal/golang-api-training/modules/auth/services"
 
 	"github.com/aldinokemal/golang-api-training/repository"
 	"github.com/gofiber/fiber/v2"
+	"github.com/gofiber/fiber/v2/middleware/cors"
 	"github.com/gofiber/fiber/v2/middleware/recover"
 )
 
