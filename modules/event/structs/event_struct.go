@@ -5,10 +5,10 @@ import "github.com/aldinokemal/golang-api-training/general_structs"
 // ============================================================================================================
 
 type EventListRequest struct {
-	Filters general_structs.ValidateTable `json:"filters"`
-	Limit   int                           `json:"limit"`
-	Offset  int                           `json:"offset"`
-	Order   []string                      `json:"order"`
+	Filters general_structs.ValidateTable `json:"filters" url:"filters"`
+	Limit   int                           `json:"limit" url:"limit"`
+	Offset  int                           `json:"offset" url:"offset"`
+	Order   []string                      `json:"order" url:"order"`
 }
 
 type EventListResponseDataLinks struct {

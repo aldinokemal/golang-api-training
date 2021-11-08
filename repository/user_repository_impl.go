@@ -34,3 +34,7 @@ func (conn userRepositoryImpl) Register(user *entity.User) (err error) {
 	}
 	return nil
 }
+
+func (conn userRepositoryImpl) DeleteAll() {
+	conn.DB.Where("1 = 1").Delete(&entity.User{})
+}
